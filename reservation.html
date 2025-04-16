@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation - Hôtel Soleil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Réserver une chambre</h1>
+  </header>
+
+  <main>
+    <form action="#" method="POST">
+      <label for="nom">Nom : <span style="color: red">*</span></label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="prenom">Prénom :  <span style="color: red">*</span></label>
+      <input type="text" id="prenom" name="prenom" required>
+
+      <label for="email">Email :  <span style="color: red">*</span></label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="tel">Téléphone :  <span style="color: red">*</span></label>
+      <input type="tel" id="tel" name="tel" required>
+
+      <label for="date-arrivee">Date d’arrivée :  <span style="color: red">*</span></label>
+      <input type="date" id="date-arrivee" name="date-arrivee" required>
+
+      <label for="date-depart">Date de départ :  <span style="color: red">*</span></label>
+      <input type="date" id="date-depart" name="date-depart" required>
+
+      <label for="type-chambre">Type de chambre :  <span style="color: red">*</span></label>
+      <select id="type-chambre" name="type-chambre" required>
+        <option value="">--Choisir une chambre--</option>
+        <option value="standard">Standard</option>
+        <option value="luxe">Luxe</option>
+        <option value="suite">Suite</option>
+      </select>
+
+      <label for="personnes">Nombre de personnes :  <span style="color: red">*</span></label>
+      <input type="number" id="personnes" name="personnes" min="1" max="10" required>
+
+      <button type="submit">Réserver</button>
+    </form>
+  </main>
+</body>
+</html>
